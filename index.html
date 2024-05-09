@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzimšanas dienu kalkulators</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dzimšanas dienu kalkulators</h1>
+        <label for="dz_date">Ievadiet savu dzimšanas datumu:</label>
+        <input type="date" id="dz_date">
+
+        <label for="sis_date">Ievadiet šodienas datumu:</label>
+        <input type="date" id="sis_date">
+
+        <label for="sis_n">Ievadiet pašreizējo nedēļas dienu (1-7):</label>
+        <input type="number" id="sis_n" min="1" max="7">
+
+        <button onclick="calculate()">Aprēķināt</button>
+
+        <p id="result"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
